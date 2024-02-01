@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "daphne",
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,8 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # local apps
+    "accounts",
     "chats",
-    
+
+    # third parties
+    # "channels"
 ]
 
 MIDDLEWARE = [
@@ -128,3 +133,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = "accounts.CustomUser"
+ASGI_APPLICATION = "chatty.asgi.application"
