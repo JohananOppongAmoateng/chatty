@@ -27,6 +27,8 @@ class _SavedStuffPageState extends State<SavedStuffPage> {
         children: [
           const SearchTextSection(),
 
+          Gap()
+
           Container(
             height: 30,
             child: ListView.separated(
