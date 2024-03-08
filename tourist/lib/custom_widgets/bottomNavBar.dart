@@ -17,23 +17,28 @@ class _BottomNavBarState extends State<BottomNavBar> {
       items: [
 
         SalomonBottomBarItem(
-          icon: Icon(Icons.home),
-          title: Text("Home"),
+          icon: const Icon(Icons.map),
+          title: const Text("Map"),
 
         ),
         SalomonBottomBarItem(
-          icon: Icon(Icons.home),
-          title: Text("Home"),
+          icon: const Icon(Icons.location_city),
+          title: const Text("Attractions"),
 
         ),
         SalomonBottomBarItem(
-          icon: Icon(Icons.home),
-          title: Text("Home"),
+          icon: const Icon(Icons.shopping_cart),
+          title: const Text("Itemnary"),
 
         ),
         SalomonBottomBarItem(
-          icon: Icon(Icons.home),
-          title: Text("Home"),
+          icon: const Icon(Icons.home),
+          title: const Text("Trip Advisor"),
+
+        ),
+        SalomonBottomBarItem(
+          icon: const Icon(Icons.settings),
+          title: const Text("Settings"),
 
         ),
 
