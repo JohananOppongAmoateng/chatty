@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tourist/pages/get_started.dart';
+import 'package:tourist/pages/loginpage.dart';
 import 'package:tourist/pages/mappage.dart';
 import 'package:tourist/pages/recently_searched_page.dart';
 import 'package:tourist/pages/tour_map_page.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(86, 203, 91, 1)),
         useMaterial3: true,
       ),
-      home: const TourMapPage(),
+      home: LoginPage(),
     );
   }
 }
